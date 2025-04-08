@@ -1,0 +1,136 @@
+###########################################################
+# TIPO ABSTRACTO DE DATOS - PILA
+###########################################################
+
+###########################################################
+# Una pila es una estructura de datos que sigue la política
+# LIFO, dónde el último elemento que se inserta es el primero
+# en salir.
+# Se representa mediante un arreglo de enteros y un índice
+# llamado tope, que indica la cima de la pila.
+# El tope se incia en -1 para representar que está vacía.
+###########################################################
+
+###########################################################
+# OPERACIONES
+###########################################################
+
+###########################################################
+# CONSTRUCTORES
+###########################################################
+
+## Construir una pila vacía con un tamaño por defecto
+
+Pila()
+
+### El constructor no necesita parámetros de entrada. Se crea
+una pila vacía con capacidad fija por defecto. El tope se
+inicializa a -1, lo que indica que no hay elementos en la pila.
+
+*Objetivo: Crear una pila vacía con tamaño predefinido.
+*Necesita: Nada.
+*Modifica: Nada.
+*Produce: Una pila vacía con capacidad 10 y tope -1.
+
+## Construir una pila vacía con tamaño predeterminado
+
+Pila(int capacidad)
+
+### Este constructor permite crear una pila vacía con una capacidad
+dada como parámetro. El valor dee ser mayor que 0. El tope comienza
+en -1. Si la capacidad es menor o igual a cero se lanza excepción.
+
+*Objetivo: Crear una pila vacía de capacidad especificada.
+*Necesita: Entero mayor que 0.
+           Excepción: Si la capacidad es menor o igual a 0, lanza
+           Excepción "Capacidad inválida".
+*Modifica: Nada.
+*Produce: Pila vacía con el tamaño especificado y tope -1.
+
+###########################################################
+# ACCESO
+###########################################################
+
+## Devolver la capacidad de la pila
+
+capacidad()
+
+### Devuelve el número máximo de elementos que puede contener la pila.
+
+*Objetivo: Obtener capacidad de la pila.
+*Necesita: La pila.
+*Modifica: Nada.
+*Produce: Un número entero.
+
+## Conocer si la pila está vacía
+
+estaVacia()
+
+### Indica si la pila está vacía. El tope debe estar en -1.
+
+*Objetivo: Verificar si hay elementos en la pila.
+*Necesita: La pila.
+*Modifica: Nada.
+*Produce: Booleano, True si está vacía, false si no.
+
+## Obtener elementos de la cima
+
+cima()
+
+### Devuelve el elemento que se encuentra en la cima de la pila, sin eliminarlo.
+    Si la pila está vacía, lanza excepción.
+
+*Objetivo: Obtener elemento del tope sin quitarlo.
+*Necesita: La pila.
+           Excepción: si la pila está vacía lanza "Pila vacía"
+*Modifica: Nada.
+*Produce: El valor del elemento que está en la cima.
+
+###########################################################
+# MODIFICACIÓN
+###########################################################
+
+## Insertar un elemento en la cima de la pila
+
+apilar(int elemento)
+
+### Inserta un elemento en la cima de la pila (incrementa tope
+    y lo guarda en la posición correspondiente). Si la pila
+    está llena, lanza excepción.
+
+*Objetivo: Inserta un nuevo valor en la pila
+*Necesita: Número entero.
+           Excepción: si la pila está llena lanza "Desborde de pila"
+*Modifica: La pila, añade nuevo elemento.
+*Produce: Nada
+
+## Eliminar el elemento de la cima de la pila
+
+desapilar()
+
+### Elimina elemento que se encuentra en la cima de la pila. Si
+    la pila está vacía, lanza excepción.
+
+*Objetivo: Eliminar el último elemento insertado.
+*Necesita: La pila.
+           Excepción: si la pila está vacía lanza "Pila vacía"
+*Modifica: La pila, elimina el último elemento.
+*Produce: Nada
+
+###########################################################
+# ENTRADA/SALIDA
+###########################################################
+
+## Mostrar los elementos de la pila desde la cima al fondo.
+
+mostrar()
+
+### Imprime en pantalla los elementos contenidos en la pila,
+    desde el elemento en la cima hasta el último. Si la pila
+    está vacía indica que no hay elementos.
+
+*Objetivo: Mostrar elementos que están en la pila.
+*Necesita: La pila.
+*Modifica: Nada.
+*Produce: Salida de texto con los elementos de la cima hasta
+          último elemento.
