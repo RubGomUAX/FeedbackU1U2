@@ -131,6 +131,7 @@ mostrar()
 
 *Objetivo: Mostrar elementos que están en la pila.
 *Necesita: La pila.
+           Excepción: si la pila está vacía lanza "Pila vacía"
 *Modifica: Nada.
 *Produce: Salida de texto con los elementos de la cima hasta
           último elemento.
