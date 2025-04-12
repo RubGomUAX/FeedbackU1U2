@@ -7,6 +7,8 @@ public class Main {
         }    */
 
         System.out.println("Capacidad de la Pila: " + pila.capacidad()); // Muestra la capacidad de la pila
+                                                                         // Si se incluye más elementos de la capacidad
+                                                                         // de la pila, dará error de desborde.
         pila.apilar(30); // Introduce elemento en la cima de la pila
         pila.apilar(50); // Introduce elemento en la cima de la pila
         pila.apilar(25); // Introduce elemento en la cima de la pila
