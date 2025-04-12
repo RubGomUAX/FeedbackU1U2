@@ -21,7 +21,7 @@
 
 ## Construir una pila vacía con un tamaño por defecto
 
-Pila()
+Ejercicio1_2.Pila()
 
 ### El constructor no necesita parámetros de entrada. Se crea
 una pila vacía con capacidad fija por defecto. El tope se
@@ -34,7 +34,7 @@ inicializa a -1, lo que indica que no hay elementos en la pila.
 
 ## Construir una pila vacía con tamaño predeterminado
 
-Pila(int capacidad)
+Ejercicio1_2.Pila(int capacidad)
 
 ### Este constructor permite crear una pila vacía con una capacidad
 dada como parámetro. El valor dee ser mayor que 0. El tope comienza
@@ -45,7 +45,7 @@ en -1. Si la capacidad es menor o igual a cero se lanza excepción.
            Excepción: Si la capacidad es menor o igual a 0, lanza
            Excepción "Capacidad inválida".
 *Modifica: Nada.
-*Produce: Pila vacía con el tamaño especificado y tope -1.
+*Produce: Ejercicio1_2.Pila vacía con el tamaño especificado y tope -1.
 
 ###########################################################
 # ACCESO
@@ -82,7 +82,7 @@ cima()
 
 *Objetivo: Obtener elemento del tope sin quitarlo.
 *Necesita: La pila.
-           Excepción: si la pila está vacía lanza "Pila vacía"
+           Excepción: si la pila está vacía lanza "Ejercicio1_2.Pila vacía"
 *Modifica: Nada.
 *Produce: El valor del elemento que está en la cima.
 
@@ -113,7 +113,7 @@ desapilar()
 
 *Objetivo: Eliminar el último elemento insertado.
 *Necesita: La pila.
-           Excepción: si la pila está vacía lanza "Pila vacía"
+           Excepción: si la pila está vacía lanza "Ejercicio1_2.Pila vacía"
 *Modifica: La pila, elimina el último elemento.
 *Produce: Nada
 
@@ -131,7 +131,7 @@ mostrar()
 
 *Objetivo: Mostrar elementos que están en la pila.
 *Necesita: La pila.
-           Excepción: si la pila está vacía lanza "Pila vacía"
+           Excepción: si la pila está vacía lanza "Ejercicio1_2.Pila vacía"
 *Modifica: Nada.
 *Produce: Salida de texto con los elementos de la cima hasta
           último elemento.

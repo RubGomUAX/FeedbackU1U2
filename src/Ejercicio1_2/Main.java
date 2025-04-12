@@ -1,3 +1,5 @@
+package Ejercicio1_2;
+
 public class Main {
     public static void main(String[] args) {
         Pila pila = new Pila(5); // Capacidad dada (por defecto o predeterminada si se quita elemento)
@@ -6,7 +8,7 @@ public class Main {
             pila.desapilar();
         }    */
 
-        System.out.println("Capacidad de la Pila: " + pila.capacidad()); // Muestra la capacidad de la pila
+        System.out.println("Capacidad de la Ejercicio1_2.Pila: " + pila.capacidad()); // Muestra la capacidad de la pila
                                                                          // Si se incluye más elementos de la capacidad
                                                                          // de la pila, dará error de desborde.
         pila.apilar(30); // Introduce elemento en la cima de la pila

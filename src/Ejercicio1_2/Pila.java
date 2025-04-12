@@ -1,4 +1,4 @@
-
+package Ejercicio1_2;
 
 // ###########################################################
 // IMPLEMENTACIÓN DEL TAD - PILA
@@ -47,7 +47,7 @@ public class Pila {
     //Obtener elementos de la cima
     public int cima(){
         if (estaVacia()) {
-            throw new IllegalArgumentException("Pila vacía");
+            throw new IllegalArgumentException("Ejercicio1_2.Pila vacía");
         }
         return elementos[tope];
     }
@@ -68,7 +68,7 @@ public class Pila {
     //Eliminar el elemento de la cima de la pila
     public void desapilar() {
         if (estaVacia()) {
-            throw new IllegalStateException("Pila vacía");
+            throw new IllegalStateException("Ejercicio1_2.Pila vacía");
         }
         tope--;
     }
