@@ -1,16 +1,16 @@
 package Ejercicio3;
 
 public class Piezas {
-    private String tipoPieza;
+    private String tipo;
     private String color;
 
-    public Piezas(String tipoPieza, String color) {
-        this.tipoPieza = tipoPieza;
+    public Piezas(String tipo, String color) {
+        this.tipo = tipo;
         this.color = color;
     }
 
-    public String getTipoPieza() {
-        return tipoPieza;
+    public String getTipo() {
+        return tipo;
     }
 
     public String getColor() {
@@ -19,6 +19,6 @@ public class Piezas {
 
     @Override
     public String toString() {
-        return tipoPieza + " (" + color + ")";
+        return color + " " + tipo;
     }
 }
